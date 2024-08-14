@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* navbar design start here */
+.nav-container {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-main {
+  max-width: 85%;
+  margin: 0px auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 8px;
+}
+
+.nav-right {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.nav-item {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item .nav-link {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 20px;
+}
+
+.nav-link-follow {
+  background-color: rgba(11, 2, 35, 0.1);
+  padding: 17px 24px;
+  border-radius: 7px;
+}
+
+/* hero design start here */
