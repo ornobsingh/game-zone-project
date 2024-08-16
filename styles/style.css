@@ -7,6 +7,10 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.display-flex {
+  display: flex;
+}
+
 /* navbar design start here */
 .nav-container {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
@@ -31,6 +35,7 @@
 .nav-right {
   font-size: 1.1rem;
   font-weight: 500;
+  display: flex;
 }
 
 .nav-item {
@@ -51,3 +56,135 @@
 }
 
 /* hero design start here */
+.hero-container {
+  background-image: url(../images/Group\ 14.png);
+  background-repeat: no-repeat;
+}
+
+.hero-main {
+  max-width: 85%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-play-text {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(11, 2, 35);
+}
+
+.hero-goat-text {
+  font-size: 5.5rem;
+  font-weight: 800;
+  background-image: linear-gradient(rgb(249, 72, 178), rgb(135, 88, 241));
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+  line-height: 100px;
+}
+
+.hero-description {
+  font-size: 1rem;
+}
+
+.hero-description p {
+  margin-bottom: 10px;
+}
+
+.hero-description i {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-right img {
+  width: 100%;
+}
+
+.hero-btn1 {
+  padding: 17px 40px;
+  background-color: rgb(255, 66, 165);
+  border: none;
+  border-radius: 45px;
+  color: white;
+  font-size: 1rem;
+  margin-top: 25px;
+  margin-right: 17px;
+}
+
+.hero-btn2 {
+  padding: 17px 40px;
+  background-color: rgb(78, 197, 247);
+  border: none;
+  border-radius: 45px;
+  color: white;
+  font-size: 1rem;
+  margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .nav-container {
+    box-shadow: none;
+    margin-bottom: 30px;
+  }
+
+  .nav-main {
+    flex-direction: column;
+  }
+
+  .nav-left {
+    font-size: 2rem;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item1{
+    margin-top: 20px;
+  }
+  .nav-item2 {
+    margin-top: 35px;
+  }
+
+  .hero-main {
+    flex-direction: column-reverse;
+  }
+  .hero-left,
+  .hero-right {
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .hero-play-text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .hero-goat-text {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  .hero-btn2 {
+    padding: 17px 40px;
+  }
+}
